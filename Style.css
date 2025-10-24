@@ -1,0 +1,132 @@
+/* إعدادات عامة */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding-top: 70px; /* حتى ما يختفي المحتوى وراء الـ nav */
+}
+
+/* الهيدر */
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #f1f1f1;
+}
+
+/* الروابط */
+a {
+  color: #00e6e6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* شريط التنقل */
+nav {
+  position: fixed;   /* يخلي الـ nav ثابت */
+  top: 0;            /* يثبت بأعلى الصفحة */
+  left: 0;
+  width: 100%;       /* يغطي عرض الصفحة */
+  background: rgba(0,0,0,0.7); /* خلفية شبه شفافة */
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;     /* يخليه فوق باقي العناصر */
+}
+nav a {
+  margin: 0 15px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+nav a:hover {
+  background: #00e6e6;
+  color: #000;
+}
+
+/* الجداول */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+th {
+  background: rgba(0,0,0,0.4);
+}
+tr:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* النماذج */
+form {
+  width: 60%;
+  margin: 30px auto;
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+input, select, textarea {
+  background: rgba(255,255,255,0.9);
+  color: #000;
+}
+button {
+  background: #00e6e6;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #fff;
+  color: #000;
+}
+#students{
+  text-align: center;
+
+}
+/* تنسيق خاص بصفحة home */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* محاذاة عمودية */
+  align-items: center;       /* محاذاة أفقية */
+  height: 100vh;             /* يملأ الشاشة كاملة */
+  text-align: center;
+  padding: 20px;
+}
+
+/* حجم خط متجاوب */
+.home-container h1 {
+  font-size: clamp(24px, 5vw, 48px); /* يتغير حسب حجم الشاشة */
+  margin-bottom: 20px;
+}
+
+.home-container p, 
+.home-container li {
+  font-size: clamp(10px, 2.5vw, 22px);
+  margin: 10px 0;
+}

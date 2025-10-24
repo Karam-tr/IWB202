@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <nav>
+    <a href="home.html">Home</a> |
+    <a href="AboutUs.html">About Us</a> |
+    <a href="apps.html">Apps</a> |
+    <a href="add_app.html">Add App</a>
+  </nav>
+  <title>Add App</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="myFunctions.js"></script>
+</head>
+<body>
+  <h1>إضافة تطبيق جديد</h1>
+  <form id="appForm">
+    <label>اسم التطبيق:</label>
+    <input type="text" id="appName" required><br>
+
+    <label>الشركة المصنعة:</label>
+    <input type="text" id="company" required><br>
+
+    <label>الموقع الإلكتروني:</label>
+    <input type="url" id="website" required><br>
+
+    <label>مجاني:</label>
+    <input type="checkbox" id="free"><br>
+
+    <label>مجال الاستخدام:</label>
+    <select id="category">
+      <option value="Robotics">Robotics</option>
+      <option value="Education">Education</option>
+      <option value="E-Commerce">E-Commerce</option>
+      <option value="Healthcare">Healthcare</option>
+    </select><br>
+
+    <label>شرح مختصر:</label>
+    <textarea id="description"></textarea><br>
+
+    <button type="submit">إرسال</button>
+    <button type="reset">إعادة</button>
+  </form>
+
+  
+</body>
+</html>

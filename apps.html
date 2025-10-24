@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <nav>
+    <a href="home.html">Home</a> |
+    <a href="AboutUs.html">About Us</a> |
+    <a href="apps.html">Apps</a> |
+    <a href="add_app.html">Add App</a>
+  </nav>
+  <title>Apps</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myFunctions.js"></script>
+</head>
+<body>
+  <h1>تطبيقات الذكاء الاصطناعي</h1>
+
+  <table border="1">
+    <tr>
+      <th>اسم التطبيق</th>
+      <th>الشركة المطورة</th>
+      <th>مجال الاستخدام</th>
+      <th>مجاني</th>
+      <th>إظهار التفاصيل</th>
+    </tr>
+
+    <!-- ChatGPT -->
+    <tr>
+      <td>ChatGPT</td>
+      <td>OpenAI</td>
+      <td>Education</td>
+      <td><input type="checkbox" checked disabled></td>
+      <td><input type="checkbox" class="toggle-details"></td>
+    </tr>
+    <tr class="details" style="display:none;">
+      <td colspan="4">
+        الموقع: <a href="https://chat.openai.com">chat.openai.com</a><br>
+        شرح: مساعد ذكي للمحادثة وتوليد النصوص.<br>
+        <img src="chatgpt_logo.png" alt="logo" width="100">
+      </td>
+      <td></td>
+    </tr>
+
+    <!-- Google Bard -->
+    <tr>
+      <td>Gemini (Bard سابقًا)</td>
+      <td>Google</td>
+      <td>Education</td>
+      <td><input type="checkbox" checked disabled></td>
+      <td><input type="checkbox" class="toggle-details"></td>
+    </tr>
+    <tr class="details" style="display:none;">
+      <td colspan="4">
+        الموقع: <a href="https://gemini.google.com">gemini.google.com</a><br>
+        شرح: مساعد ذكي من Google للبحث والإبداع.<br>
+        <img src="google_gemini.png" alt="logo" width="100">
+      </td>
+      <td></td>
+    </tr>
+
+    <!-- MidJourney -->
+    <tr>
+      <td>MidJourney</td>
+      <td>MidJourney Inc.</td>
+      <td>Art & Design</td>
+      <td><input type="checkbox" disabled></td>
+      <td><input type="checkbox" class="toggle-details"></td>
+    </tr>
+    <tr class="details" style="display:none;">
+      <td colspan="4">
+        الموقع: <a href="https://www.midjourney.com">midjourney.com</a><br>
+        شرح: أداة لتوليد الصور باستخدام الذكاء الاصطناعي.<br>
+        <img src="midjourney_logo.png" alt="logo" width="100">
+      </td>
+      <td></td>
+    </tr>
+
+    <!-- Tesla Autopilot -->
+    <tr>
+      <td>Tesla Autopilot</td>
+      <td>Tesla</td>
+      <td>Robotics / Automotive</td>
+      <td><input type="checkbox" disabled></td>
+      <td><input type="checkbox" class="toggle-details"></td>
+    </tr>
+    <tr class="details" style="display:none;">
+      <td colspan="4">
+        الموقع: <a href="https://www.tesla.com/autopilot">tesla.com/autopilot</a><br>
+        شرح: نظام قيادة ذاتية يعتمد على الذكاء الاصطناعي.<br>
+        <img src="tesla_logo.png" alt="logo" width="100">
+      </td>
+      <td></td>
+    </tr>
+
+    <!-- Duolingo AI -->
+    <tr>
+      <td>Duolingo AI</td>
+      <td>Duolingo</td>
+      <td>Education</td>
+      <td><input type="checkbox" checked disabled></td>
+      <td><input type="checkbox" class="toggle-details"></td>
+    </tr>
+    <tr class="details" style="display:none;">
+      <td colspan="4">
+        الموقع: <a href="https://www.duolingo.com">duolingo.com</a><br>
+        شرح: تعليم اللغات باستخدام الذكاء الاصطناعي والتخصيص.<br>
+        <img src="duolingo_logo.png" alt="logo" width="100">
+      </td>
+      <td></td>
+    </tr>
+
+  </table>
+
+ 
+</body>
+</html>
